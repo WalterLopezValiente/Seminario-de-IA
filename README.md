@@ -17,7 +17,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 # Cargamos el dataset
-df = pd.read_csv('data/winequality-red.csv', delimiter=';')
+df = pd.read_csv('https://github.com/WalterLopezValiente/Seminario-de-IA/blob/main/winequality-red.csv', delimiter=';')
 
 # Separamos features y target
 X = df.drop('quality', axis=1)
@@ -99,7 +99,7 @@ grid_search.fit(X_train_scaled, y_train)
 ## Archivos del proyecto
 ```
 ├── datos_vino/
-│   └── winequality-red.csv
+│   └── https://github.com/WalterLopezValiente/Seminario-de-IA/blob/main/winequality-red.csv
 ├── codigo/
 │   └── analisis_vino.py
 └── resultados/
